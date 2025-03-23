@@ -3,20 +3,20 @@ const makeChange = (c) => {
 let ans={}
 let q=Math.floor(c/25);
 	c=c%25;
-	ans.push(`"q":${q}`)
+	ans.q=q;
 let d=Math.floor(c/10);
 	c=c%10;
-	ans.push(`"d":${d}`)
+	ans.d=d;
 let n=Math.floor(c/5);
 	c=c%5;
-	ans.push(`"n":${n}`)
+	ans.n=n;
 	let p=Math.floor(c/1);
 	c=c%1;
-	ans.push(`"p":${p}`)
+	ans.p=p;
 	return ans
 };
 
 // Do not the change the code below
 
-const c = prompt("Enter c: ");
-alert(JSON.stringify(makeChange(c)));
+const c = pompt("Enter c: ");
+rt(JSON.stringify(makeChange(c)));
